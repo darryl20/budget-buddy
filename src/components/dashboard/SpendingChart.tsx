@@ -30,7 +30,7 @@ export function SpendingChart() {
                 color: "oklch(0.95 0.01 260)",
                 fontSize: "12px",
               }}
-              formatter={(value: number) => [`$${value.toLocaleString()}`, undefined]}
+              formatter={(value: any) => [`$${Number(value).toLocaleString()}`, undefined]}
             />
             <Area type="monotone" dataKey="income" stroke="oklch(0.72 0.19 160)" fill="url(#incomeGrad)" strokeWidth={2} />
             <Area type="monotone" dataKey="expenses" stroke="oklch(0.63 0.24 25)" fill="url(#expenseGrad)" strokeWidth={2} />

@@ -33,7 +33,7 @@ export function CategoryBreakdown() {
                 color: "oklch(0.95 0.01 260)",
                 fontSize: "12px",
               }}
-              formatter={(value: number) => [`$${value}`, undefined]}
+              formatter={(value: any) => [`$${value}`, undefined]}
             />
           </PieChart>
         </ResponsiveContainer>
