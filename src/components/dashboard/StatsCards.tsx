@@ -3,7 +3,7 @@ import { TrendingUp, TrendingDown, Wallet, CreditCard } from "lucide-react";
 const stats = [
   {
     label: "Total Balance",
-    value: "$44,311.10",
+    value: "$63,061.10",
     change: "+2.4%",
     positive: true,
     icon: Wallet,
@@ -27,7 +27,7 @@ const stats = [
   },
   {
     label: "Active Cards",
-    value: "3",
+    value: "4",
     change: "All synced",
     positive: true,
     icon: CreditCard,
