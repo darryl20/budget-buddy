@@ -36,10 +36,10 @@ function AccountsPage() {
                   <div className="flex h-10 w-10 items-center justify-center rounded-lg" style={{ backgroundColor: `${acc.color}15` }}>
                     <Icon className="h-5 w-5" style={{ color: acc.color }} />
                   </div>
-                  <div>
-                    <p className="text-sm font-semibold">{acc.name}</p>
-                    <p className="text-xs text-muted-foreground">{acc.bank}</p>
-                  </div>
+                   <div>
+                     <p className="text-sm font-semibold">{acc.name}</p>
+                     <p className="text-xs text-muted-foreground">{acc.bank} · {acc.accountNumber}</p>
+                   </div>
                 </div>
               </div>
               <div className="mt-4">
