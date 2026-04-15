@@ -12,6 +12,7 @@ export type Account = {
   id: string;
   name: string;
   bank: string;
+  accountNumber: string;
   balance: number;
   type: "savings" | "checking" | "credit";
   lastUpdated: string;
@@ -26,9 +27,10 @@ export type Budget = {
 };
 
 export const accounts: Account[] = [
-  { id: "1", name: "Primary Checking", bank: "Chase", balance: 12450.80, type: "checking", lastUpdated: "2026-04-15", color: "#22c55e" },
-  { id: "2", name: "High Yield Savings", bank: "Marcus", balance: 34200.50, type: "savings", lastUpdated: "2026-04-14", color: "#3b82f6" },
-  { id: "3", name: "Credit Card", bank: "Amex", balance: -2340.20, type: "credit", lastUpdated: "2026-04-15", color: "#f59e0b" },
+  { id: "1", name: "Primary Checking", bank: "Chase", accountNumber: "****4521", balance: 12450.80, type: "checking", lastUpdated: "2026-04-15", color: "#22c55e" },
+  { id: "2", name: "High Yield Savings", bank: "Marcus", accountNumber: "****7832", balance: 34200.50, type: "savings", lastUpdated: "2026-04-14", color: "#3b82f6" },
+  { id: "3", name: "Savings Account", bank: "Ally", accountNumber: "****9104", balance: 18750.00, type: "savings", lastUpdated: "2026-04-13", color: "#8b5cf6" },
+  { id: "4", name: "Credit Card", bank: "Amex", accountNumber: "****3367", balance: -2340.20, type: "credit", lastUpdated: "2026-04-15", color: "#f59e0b" },
 ];
 
 export const transactions: Transaction[] = [
